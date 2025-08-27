@@ -1,0 +1,49 @@
+/* Global Body Styles */
+body {
+    background-color: #f8f9fa; /* A light grey background for a softer look */
+}
+
+/* Header Navbar Styling */
+.navbar-brand {
+    font-size: 1.5rem; /* Make the brand name a bit larger */
+    font-weight: bold;
+}
+
+/* Main Content Container */
+.container {
+    padding-top: 20px;
+    padding-bottom: 70px; /* Add padding to the bottom to avoid overlap with the footer */
+}
+
+/* Table and Form Card Styling */
+.table, .card {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); /* Add a subtle shadow for a floating effect */
+    border: none; /* Remove the default border to rely on the shadow */
+}
+
+.table thead {
+    background-color: #343a40; /* Dark header for the table */
+    color: white;
+}
+
+.card-body {
+    padding: 2rem; /* Add more padding inside the form card */
+}
+
+.btn {
+    margin-right: 5px; /* Add a little space between buttons */
+}
+
+/* Footer Styling */
+.footer {
+    position: fixed; /* Keep the footer fixed at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Match the dark header */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    height: 60px;
+}

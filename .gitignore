@@ -1,0 +1,17 @@
+# Java/Maven backend
+/ems-backend/target/
+/ems-backend/.mvn/
+/ems-backend/mvnw
+/ems-backend/mvnw.cmd
+/ems-backend/*.iml
+
+# Node.js frontend
+/ems-frontend/node_modules/
+/ems-frontend/build/
+/ems-frontend/.pnp.*
+
+# IDE files & OS files
+.idea/
+.vscode/
+*.swp
+.DS_Store
