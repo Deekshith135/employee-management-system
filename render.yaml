@@ -10,7 +10,7 @@ services:
       - fromGroup: ems-database-credentials # A name for our database secret group
 
   # React Frontend Service
-  - type: static
+  - type: static_site
     name: ems-frontend
     rootDir: ems-frontend
     buildCommand: "npm run build"
