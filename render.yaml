@@ -1,0 +1,22 @@
+services:
+  # Spring Boot Backend Service
+  - type: web
+    name: ems-backend
+    env: java  # This explicitly tells Render to use Java
+    rootDir: ems-backend
+    buildCommand: "./mvnw clean package"
+    startCommand: "java -jar target/ems-backend-0.0.1-SNAPSHOT.jar"
+    envVars:
+      - fromGroup: ems-database-credentials # A name for our database secret group
+
+  # React Frontend Service
+  - type: static
+    name: ems-frontend
+    rootDir: ems-frontend
+    buildCommand: "npm run build"
+    publishDir: "build" # The folder where the built files are
+    # Rewrite rule for single-page apps like React
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
