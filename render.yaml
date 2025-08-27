@@ -4,8 +4,8 @@ services:
     name: ems-backend
     env: java
     rootDir: ems-backend
-    buildCommand: "./mvnw clean package"
-    startCommand: "java -jar target/ems-backend-0.0.1-SNAPSHOT.jar"
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/ems-backend-0.0.1-SNAPSHOT.jar
     envVars:
       - fromGroup: ems-database-credentials
 
@@ -13,9 +13,8 @@ services:
   - type: static_site
     name: ems-frontend
     rootDir: ems-frontend
-    buildCommand: "npm run build"
-    # This path is now corrected to be from the repository root
-    publishDir: "ems-frontend/build"
+    buildCommand: npm run build
+    publishDir: ems-frontend/build
     routes:
       - type: rewrite
         source: /*
